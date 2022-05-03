@@ -1,4 +1,4 @@
-# Web-Dev-projects
+# Web-Dev-Assignment
 Assignments submissions and updating the code as well in real time.
 
 The code written is authentic and completely based on my research, 
