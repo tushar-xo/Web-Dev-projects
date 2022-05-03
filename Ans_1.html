@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 0.5s;
+        font-family: "Century Gothic", sans-serif;
+     }
+     
+     .navlist{
+        width: 100%;
+        position: fixed;
+        padding: 5px 10%;
+        background-color: #110e2bbb;
+     }
+     .navlist ul{
+        display: flex;
+        list-style: none;
+     }
+     .navlist ul li:first-child{
+        flex: 1;
+        color: #ffffff;
+     }
+     .navlist ul li h4{
+        font-family: serif;
+     }
+     .navlist ul a{
+        display: block;
+        margin-left: 20px;
+        font-family: "Century Gothic", sans-serif;
+        font-size: 0.9rem;
+        color: white;
+        text-decoration: none;
+     }
+     .navlist ul a:hover{
+        color: #ff8800;
+     }
+     
+     
+     
+     .main-box{
+        width: 100%;
+        height: 80vh;
+        background-image: linear-gradient(#000000bb, #000000bb), url(https://iiitkota.ac.in/static/media/logo.b831a251.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 30vh;
+     }
+     
+     .main-box h1{
+        word-spacing: 8px;
+        margin-bottom: 15px;
+        font-family: serif;
+     }
+     .main-box p{
+        font-family: "Century Gothic", sans-serif;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        margin-bottom: 40px;
+     }
+     .main-box button{
+        padding: 10px;
+        border: none;
+        outline: none;
+        background: none;
+        border: 1px solid #ff8800;
+        color: #ffffff;
+     }
+     .main-box button:hover{
+        background: #ff8800;
+     }
+     
+     .container{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+     }
+     .container h2{
+        color: #ff8800;
+        text-align: center;
+        margin: 30px;
+        font-family: 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 5px;
+     }
+     .container h2::before, .container h2::after{
+        content: "-----";
+        letter-spacing: -5px;
+        font-weight: lighter;
+        margin: 0 20px 0 10px;
+     }
+     .container .row{
+        display: flex;
+        justify-content: space-between;
+     }
+     .container .column{
+        width: 32%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+     }
+     .container .column img{
+        width: 100%;
+        height: auto;
+     }
+     .container .column a:last-child{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 0;
+        top: 99%;
+        bottom: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #ff8800c0;
+        text-align: center;
+        padding-top: 14vw;
+        font-size: 3vw;
+        color: #ffffff;
+        text-decoration: none;
+     }
+     .container .column:hover a:last-child{
+        height: 100%;
+        top: 0;
+     } 
+     article, aside, figure, footer, header, main, menu, nav, section {
+	display: block;
+	box-sizing: border-box;
+}
+body, h1, h2, p, ul, ol, li, dd, dl {
+	margin: 0; padding: 0;
+}
+
+header {
+	padding: 50px 20px;
+}
+h1, main {
+	text-align: center;
+}
+table {
+	border-collapse: collapse;
+	display: inline-block;
+	text-align: left;
+	border-top: 1px solid #888;
+}
+table thead {
+	background: #3c008f;
+}
+table tr:nth-child(3) {
+	background: #cfadff;
+}
+table th, table td {
+	padding: 10px 20px;
+	border: 10px solid #888;
+	border-width: 0 1px 1px;
+}
+
+@media screen and (max-width: 1000px) {
+	
+	table td {
+		display: block;
+		text-align: right;
+	}
+	
+	table td:before {
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+		margin-right: 10px;
+	}
+	
+	table thead {
+		display: none;
+	}
+}
+     </style>
+<head>
+   <link rel="stylesheet" href="The Modern College.css">
+   <link rel="stylesheet" href="../all.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Suraj Kupate">
+   <title>IIIT Kota</title>
+</head>
+<body style="background-color:#fefff7">
+   <nav class="navlist">
+      <ul>
+         <li><h4>IIIT KOTA</h4></li>
+         <li><a href="">Home</a></li>
+         <li><a href="">About</a></li>
+         <li><a href="">Course</a></li>
+         <li><a href="">Faculty</a></li>
+      </ul>
+   </nav>
+   <div class="main-box">
+      <h1>Indian Institute of Information Technology, Kota</h1>
+      <p>Admissions through JEE Mains</p>
+      <button>ENROLL NOW</button>
+   </div>
+   <div class="container">
+      <br><br>
+    <h2>Description</h2>
+      <div class="row">
+         <div class="column">
+         <a href=""><img src="https://iiitkota.ac.in/static/media/convocation.2d2ca51c.png" alt="campus"></a>
+         <a href="">Campus</a>
+         
+         </div>
+
+         <div class="column">
+            <a href=""><img src="https://iiitkota.ac.in/static/media/2.465588c9.png" alt="hostel"></a>
+            <a href="">Hostel</a>
+         </div>
+
+         <div class="column">
+            <a href=""><img src="https://iiitkota.ac.in/static/media/1.ec9e1c37.png" alt="VLTC"></a>
+            <a href="">Lecture Hall</a>
+            
+         </div>
+      </div>
+      <br><br>
+      <h3>History</h3>
+      <br>
+      <p>Indian Institute of Information Technology, Kota (IIIT, Kota) is an institute of national importance. IIIT Kota is a joint venture of the Ministry of Education (MoE) Govt. of India and Govt. of Rajasthan with Industry Partners in Public-Private-Partnership (PPP) model. 
+        IIIT Kota was established in 2013. Currently, the institute is mentored by Malaviya National Institute of Technology Jaipur (MNIT Jaipur) and is situated at MNIT Jaipur. The main site of IIIT, Kota shall be constructed at Ranpur near Kota on 100.37 acres of land made available by the Govt. of Rajasthan.</p>
+        <br>
+        <br>
+     <h2>Placements 2025</h2>
+
+     <main>
+		<table>
+			<thead>
+				<tr>
+					
+					<th style="color:pink">Branch</th>
+					<th style="color:pink">Max. Package</th>
+					<th style="color:pink">Avg. Package</th>
+					<th style="color:pink">% Placement</th>
+	
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					
+					<td data-label="Branch:">CSE</td>
+					<td data-label="Max. Package:">52 LPA</td>
+					<td data-label="Avg. Package:">16.5 LPA</td>
+					<td data-label="% Placement:">99.65%</td>
+					
+				</tr>
+				<tr>
+					
+					<td data-label="Branch:">ECE</td>
+					<td data-label="Max. Package:">52 LPA</td>
+					<td data-label="Avg. Package:">16 LPA</td>
+					<td data-label="% Placement:">98.75%</td>
+				
+				</tr>
+				<tr>
+					
+					<td data-label="Branch:">Total</td>
+					<td data-label="Max. Package:">52 LPA</td>
+					<td data-label="Avg. Package:">16.25 LPA</td>
+					<td data-label="% Placement:">99.87%</td>
+					
+				</tr>
+			</tbody>
+		</table>
+	</main>
+    <br><br>
+    <h2>About IIIT Kota</h2>
+      <p>Characterised by a tradition of creating a center for imparting technical education of international standards, we are committed to excellence in education, to innovative practice and to the concept of lifelong learning.The Indian Institute of Information Technology Kota, deemed to be a Institute of National Importance, was established in 2013 with a vision to contribute the IT world through education and research, entrepreneurship and innovation.
+      </p>
+      <br>
+      <h4 style="color:#031b8a">IIIT Kota is a joint venture of the Ministry of Education (MoE) Govt. of India and Govt. of Rajasthan with Industry Partners in Public-Private-Partnership (PPP) mode.</h4>
+      <h2>.</h2>
+   </div>
+</body>
+</html> 

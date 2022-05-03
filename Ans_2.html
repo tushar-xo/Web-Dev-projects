@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>food.html</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+  
+  .menu {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+  }
+  
+  .menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+  }
+  
+  .menu-item {
+    display: flex;
+  }
+  
+  .menu-item-image {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+  }
+  
+  .menu-item-text {
+    flex-grow: 1;
+  }
+  
+  .menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  .menu-item-name {
+    margin-right: 1.5em;
+  }
+  
+  .menu-item-description {
+    line-height: 1.6;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .menu {
+      font-size: 16px;
+    }
+  
+    .menu-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .menu-item-image {
+      width: 125px;
+      height: 125px;
+    }
+  }
+  </style>
+<body>
+  <div class="container">
+    <div class="menu">
+    <h1 class ="menu-group-heading">The Bistro </h1>
+    <br>
+     <h2 class="menu-group-heading">
+        The Menu
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg" alt="Pizza">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Pizza</span>
+              <span class="menu-item-price">₹ 700</span>
+            </h3>
+            <p class="menu-item-description">
+              Delicious Pepperoni, Capcicum, Jalepeno,Tofu Pizza glazed with Cheese and with dual layer of margherita inside to melt in your mouth!
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://simply-delicious-food.com/wp-content/uploads/2021/09/Chicken-alfredo-2.jpg" alt="Pasta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Alfredo Pasta</span>
+              <span class="menu-item-price">₹ 400</span>
+            </h3>
+            <p class="menu-item-description">
+             Alfredo Pasta recipe is a classic creamy pasta tossed in a rich alfredo sauce made with parmesan cheese, whipping cream and seasonings.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-image" src="https://assets.cntraveller.in/photos/60ba26c0bfe773a828a47146/4:3/w_1440,h_1080,c_limit/Burgers-Mumbai-Delivery.jpg" alt="Burger">
+        <div class="menu-item-text">
+          <h3 class="menu-item-heading">
+            <span class="menu-item-name">Burger</span>
+            <span class="menu-item-price">₹ 200</span>
+          </h3>
+          <p class="menu-item-description">
+           Hamburger consisting of fillings —usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <br><br>
+      <h2 class="menu-group-heading">
+        Dessert
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://ribbonsandballoons.com/assets1/uploads/PRA_0074_362907.jpg" alt="Pastry">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Pastry</span>
+              <span class="menu-item-price">₹ 170</span>
+            </h3>
+            <p class="menu-item-description">
+            Baked & made with a dough of flour, water and shortening that may be savoury or sweetened. Licking is irresistible.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://www.homemadeinterest.com/wp-content/uploads/2021/10/Easy-Chocolate-Croissant_IG-3.jpg" alt="crossaint">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Easy-Chocolate-Croissant</span>
+              <span class="menu-item-price">₹ 190</span>
+            </h3>
+            <p class="menu-item-description">
+             A croissant is a buttery, flaky, French viennoiserie pastry inspired by the shape of the Austrian kipferl but using the French yeast-leavened laminated dough.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
