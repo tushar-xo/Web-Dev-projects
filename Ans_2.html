@@ -15,6 +15,9 @@
     padding: 1.5em;
   }
   
+  span:hover {
+  background-color: rgb(244, 202, 249);
+  }
   .menu {
     font-family: "Inter", sans-serif;
     font-size: 14px;
@@ -63,6 +66,13 @@
     line-height: 1.6;
   }
   
+  p.groove {
+    border-style: groove;
+    border-width: 2px;
+    border-radius: 4px;
+    padding-left: 10px;
+  }
+
   @media screen and (min-width: 992px) {
     .menu {
       font-size: 16px;
@@ -77,13 +87,61 @@
       height: 125px;
     }
   }
+  .navbar{
+            background-color: black;
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+        
+        
   </style>
 <body>
+  <header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Catering Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search Food Item">
+            </div>
+        </ul>
+    </nav>
+</header>
   <div class="container">
     <div class="menu">
-    <h1 class ="menu-group-heading">The Bistro </h1>
-    <br>
-     <h2 class="menu-group-heading">
+    <h1 class ="menu-group-heading" style="background-color:rgb(238, 235, 235);">The Bistro Café</h1>
+    <h3>~ Simplicity is Impeccable ~ </h3>
+     <h2 class="menu-group-heading" style="background-color:rgb(238, 235, 235);">
         The Menu
       </h2>
       <div class="menu-group">
@@ -94,7 +152,7 @@
               <span class="menu-item-name">Pizza</span>
               <span class="menu-item-price">₹ 700</span>
             </h3>
-            <p class="menu-item-description">
+            <p class="menu-item-description groove">
               Delicious Pepperoni, Capcicum, Jalepeno,Tofu Pizza glazed with Cheese and with dual layer of margherita inside to melt in your mouth!
             </p>
           </div>
@@ -106,7 +164,7 @@
               <span class="menu-item-name">Alfredo Pasta</span>
               <span class="menu-item-price">₹ 400</span>
             </h3>
-            <p class="menu-item-description">
+            <p class="menu-item-description groove">
              Alfredo Pasta recipe is a classic creamy pasta tossed in a rich alfredo sauce made with parmesan cheese, whipping cream and seasonings.
             </p>
           </div>
@@ -119,15 +177,54 @@
             <span class="menu-item-name">Burger</span>
             <span class="menu-item-price">₹ 200</span>
           </h3>
-          <p class="menu-item-description">
-           Hamburger consisting of fillings —usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll.
+          <p class="menu-item-description groove">
+           Hamburger consisting of fillings —usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll. Which type of food is burger?
+           A hamburger (or burger for short) is a food consisting of fillings —usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll.
           </p>
         </div>
       </div>
-    </div>
+      <br><br>
+      <div class="menu-item">
+        <img class="menu-item-image" src="https://static.toiimg.com/thumb/60118649.cms?imgsize=568327&width=800&height=800" alt="Bread">
+        <div class="menu-item-text">
+          <h3 class="menu-item-heading">
+            <span class="menu-item-name">Breads</span>
+            <span class="menu-item-price">₹ 80</span>
+          </h3>
+          <p class="menu-item-description groove">
+           Carefully Buttered thoroughly Breads from the love city Paris. A baguette is a long, thin type of bread of French origin that is commonly made from basic lean dough. It is distinguishable by its length and crisp crust. 
+          </p>
+        </div>
+      </div>
+      <br><br>
+      <div class="menu-item">
+        <img class="menu-item-image" src="https://www.licious.in/blog/wp-content/uploads/2022/02/shutterstock_761402230-600x600.jpg" alt="Bread">
+        <div class="menu-item-text">
+          <h3 class="menu-item-heading">
+            <span class="menu-item-name">Chicken Lollipop</span>
+            <span class="menu-item-price">₹ 280</span>
+          </h3>
+          <p class="menu-item-description groove">
+            Chicken lollipop is an hors d'oeuvre popular in Indo-Chinese cuisine. Chicken lollipop is, essentially a frenched chicken winglet, wherein the meat is cut loose from the bone end and pushed down creating a lollipop appearance. It is usually served hot with Szechuan sauce.
+          </p>
+        </div>
+      </div>
+      <br><br>
+      <div class="menu-item">
+        <img class="menu-item-image" src="https://www.cookwithmanali.com/wp-content/uploads/2015/07/Restaurant-Style-Recipe-Paneer-Tikka.jpg" alt="Paneer Tikka">
+        <div class="menu-item-text">
+          <h3 class="menu-item-heading">
+            <span class="menu-item-name">Paneer Tikka</span>
+            <span class="menu-item-price">₹ 200</span>
+          </h3>
+          <p class="menu-item-description groove">
+            Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. It is a vegetarian alternative to chicken tikka and other meat dishes.
+          </p>
+        </div>
+      </div>
     
     <br><br>
-      <h2 class="menu-group-heading">
+      <h2 class="menu-group-heading" style="background-color:rgb(238, 235, 235);">
         Dessert
       </h2>
       <div class="menu-group">
@@ -138,7 +235,7 @@
               <span class="menu-item-name">Pastry</span>
               <span class="menu-item-price">₹ 170</span>
             </h3>
-            <p class="menu-item-description">
+            <p class="menu-item-description groove">
             Baked & made with a dough of flour, water and shortening that may be savoury or sweetened. Licking is irresistible.
             </p>
           </div>
@@ -150,14 +247,84 @@
               <span class="menu-item-name">Easy-Chocolate-Croissant</span>
               <span class="menu-item-price">₹ 190</span>
             </h3>
-            <p class="menu-item-description">
+            <p class="menu-item-description groove">
              A croissant is a buttery, flaky, French viennoiserie pastry inspired by the shape of the Austrian kipferl but using the French yeast-leavened laminated dough.
             </p>
           </div>
         </div>
+        </div>
+        <br>
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://i.ndtvimg.com/i/2015-12/peanut-butter-cookies-625_625x350_51450435120.jpg" alt="crossaint">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Baked Biscuits</span>
+              <span class="menu-item-price">₹ 90</span>
+            </h3>
+            <p class="menu-item-description groove">
+              A cookie is a baked or cooked snack or dessert that is typically small, flat and sweet. It usually contains flour, sugar, egg, and some type of oil, fat, or butter. 
+            </p>
+          </div>
+        </div>
+        <br><br>
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://www.hersheyland.com/content/dam/hersheyland/en-us/recipes/recipe-images/17-hersheys-rich-cocoa-fudge.jpg" alt="crossaint">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Chocolate Fudge</span>
+              <span class="menu-item-price">₹ 150</span>
+            </h3>
+            <p class="menu-item-description groove">
+              Fudge contains chocolate as an ingredient. All of our flavors at Trio Fudge have a base of either milk chocolate, dark chocolate, or white chocolate. Fudge can be categorized as a type of chocolate, but it really lives in its own dessert world! Basically - all Fudge is Chocolate, but not all Chocolate is Fudge!
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <h2 class="menu-group-heading" style="background-color:rgb(238, 235, 235);">
+       Coffee & Shakes
+      </h2>
+      <br>
+      <div class="menu-item">
+        <img class="menu-item-image" src="https://brookrest.com/wp-content/uploads/2020/05/AdobeStock_315919556-scaled.jpeg" alt="crossaint">
+        <div class="menu-item-text">
+          <h3 class="menu-item-heading">
+            <span class="menu-item-name">Latte</span>
+            <span class="menu-item-price">₹ 250</span>
+          </h3>
+          <p class="menu-item-description groove">
+            Caffè latte, often shortened to just latte in English, is a coffee beverage of Italian origin made with espresso and steamed milk. A latte begins with the same base — a single or double shot of espresso. This espresso is then combined with several ounces of steamed milk to create a rich, creamy beverage that has a more subtle espresso taste.
+        </div>
+      </div>
+      <br>
+      <div class="menu-item">
+        <img class="menu-item-image" src="https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Mocha-1fc71f7.png" alt="Mocha">
+        <div class="menu-item-text">
+          <h3 class="menu-item-heading">
+            <span class="menu-item-name">Mocha Coffee</span>
+            <span class="menu-item-price">₹ 300</span>
+          </h3>
+          <p class="menu-item-description groove">
+            'mocha' means a type of good quality coffee that is made from a specific coffee bean. The beans are from the plant species called Coffee Arabica, and it was originally only grown in Mocha, Yemen. It also means a mixture of coffee and chocolate, or a flavouring that tastes of this.
+          </p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-image" src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2020-07-how-to-make-a-milkshake-at-home%2F2020-06-08_AT-K19388" alt="Mocha">
+        <div class="menu-item-text">
+          <h3 class="menu-item-heading">
+            <span class="menu-item-name">MilkShake - Chocolate // Vanilla // Strawberry</span>
+            <span class="menu-item-price">₹ 150</span>
+          </h3>
+          <p class="menu-item-description groove">
+            A milkshake is a sweet beverage made by blending milk, ice cream, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup, fruit syrup, or whole fruit into a thick, sweet, cold mixture.
+          </p>
+        </div>
       </div>
     </div>
   </div>
+  <footer>
+    
+  </footer>
 </body>
 
 </html>
