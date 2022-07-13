@@ -25,10 +25,16 @@
   
   .menu-group-heading {
     margin: 0;
-    padding-bottom: 1em;
-    border-bottom: 2px solid #ccc;
+    padding: 0.5rem;
+    /* padding-bottom: 1em;
+    border-bottom: 2px solid #ccc; */
+    /* text-align: center;
+    line-height: 2rem; */
+    
   }
-  
+  .menu-group-heading h2{
+    margin-left: 1rem;
+  }
   .menu-group {
     display: grid;
     grid-template-columns: 1fr;
@@ -60,10 +66,12 @@
   
   .menu-item-name {
     margin-right: 1.5em;
+    margin-left: 10px;
   }
   
   .menu-item-description {
     line-height: 1.6;
+    margin-left: 10px;
   }
   
   p.groove {
@@ -121,7 +129,17 @@
             width: 129px;
         }
         
-        
+        .zoom {
+              padding: 0px;
+              transition: transform .2s;
+              width: 125px;
+              height: 125px;
+              margin: 0 auto;
+        }
+
+        .zoom:hover {
+               transform: scale(1.5);
+        }
   </style>
 <body>
   <header>
@@ -139,14 +157,14 @@
 </header>
   <div class="container">
     <div class="menu">
-    <h1 class ="menu-group-heading" style="background-color:rgb(238, 235, 235);">The Bistro Café</h1>
-    <h3>~ Simplicity is Impeccable ~ </h3>
+    <h1 class ="menu-group-heading" style="background-color:rgb(238, 235, 235); text-align: center;">The Bistro Café</h1>
+    <h3 style="text-align: center;">~ Simplicity is Impeccable ~ </h3>
      <h2 class="menu-group-heading" style="background-color:rgb(238, 235, 235);">
-        The Menu
+        Speciality
       </h2>
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg" alt="Pizza">
+          <img class="menu-item-image zoom" src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg" alt="Pizza">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Pizza</span>
@@ -158,7 +176,7 @@
           </div>
         </div>
         <div class="menu-item">
-          <img class="menu-item-image" src="https://simply-delicious-food.com/wp-content/uploads/2021/09/Chicken-alfredo-2.jpg" alt="Pasta">
+          <img class="menu-item-image zoom" src="https://simply-delicious-food.com/wp-content/uploads/2021/09/Chicken-alfredo-2.jpg" alt="Pasta">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Alfredo Pasta</span>
@@ -171,7 +189,7 @@
         </div>
       </div>
       <div class="menu-item">
-        <img class="menu-item-image" src="https://assets.cntraveller.in/photos/60ba26c0bfe773a828a47146/4:3/w_1440,h_1080,c_limit/Burgers-Mumbai-Delivery.jpg" alt="Burger">
+        <img class="menu-item-image zoom" src="https://assets.cntraveller.in/photos/60ba26c0bfe773a828a47146/4:3/w_1440,h_1080,c_limit/Burgers-Mumbai-Delivery.jpg" alt="Burger">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Burger</span>
@@ -185,7 +203,7 @@
       </div>
       <br><br>
       <div class="menu-item">
-        <img class="menu-item-image" src="https://static.toiimg.com/thumb/60118649.cms?imgsize=568327&width=800&height=800" alt="Bread">
+        <img class="menu-item-image zoom" src="https://static.toiimg.com/thumb/60118649.cms?imgsize=568327&width=800&height=800" alt="Bread">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Breads</span>
@@ -198,7 +216,7 @@
       </div>
       <br><br>
       <div class="menu-item">
-        <img class="menu-item-image" src="https://www.licious.in/blog/wp-content/uploads/2022/02/shutterstock_761402230-600x600.jpg" alt="Bread">
+        <img class="menu-item-image zoom" src="https://www.licious.in/blog/wp-content/uploads/2022/02/shutterstock_761402230-600x600.jpg" alt="Bread">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Chicken Lollipop</span>
@@ -211,7 +229,7 @@
       </div>
       <br><br>
       <div class="menu-item">
-        <img class="menu-item-image" src="https://www.cookwithmanali.com/wp-content/uploads/2015/07/Restaurant-Style-Recipe-Paneer-Tikka.jpg" alt="Paneer Tikka">
+        <img class="menu-item-image zoom" src="https://www.cookwithmanali.com/wp-content/uploads/2015/07/Restaurant-Style-Recipe-Paneer-Tikka.jpg" alt="Paneer Tikka">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Paneer Tikka</span>
@@ -229,7 +247,7 @@
       </h2>
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="https://ribbonsandballoons.com/assets1/uploads/PRA_0074_362907.jpg" alt="Pastry">
+          <img class="menu-item-image zoom" src="https://ribbonsandballoons.com/assets1/uploads/PRA_0074_362907.jpg" alt="Pastry">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Pastry</span>
@@ -241,7 +259,7 @@
           </div>
         </div>
         <div class="menu-item">
-          <img class="menu-item-image" src="https://www.homemadeinterest.com/wp-content/uploads/2021/10/Easy-Chocolate-Croissant_IG-3.jpg" alt="crossaint">
+          <img class="menu-item-image zoom" src="https://www.homemadeinterest.com/wp-content/uploads/2021/10/Easy-Chocolate-Croissant_IG-3.jpg" alt="crossaint">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Easy-Chocolate-Croissant</span>
@@ -255,7 +273,7 @@
         </div>
         <br>
         <div class="menu-item">
-          <img class="menu-item-image" src="https://i.ndtvimg.com/i/2015-12/peanut-butter-cookies-625_625x350_51450435120.jpg" alt="crossaint">
+          <img class="menu-item-image zoom" src="https://i.ndtvimg.com/i/2015-12/peanut-butter-cookies-625_625x350_51450435120.jpg" alt="crossaint">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Baked Biscuits</span>
@@ -268,7 +286,7 @@
         </div>
         <br><br>
         <div class="menu-item">
-          <img class="menu-item-image" src="https://www.hersheyland.com/content/dam/hersheyland/en-us/recipes/recipe-images/17-hersheys-rich-cocoa-fudge.jpg" alt="crossaint">
+          <img class="menu-item-image zoom" src="https://www.hersheyland.com/content/dam/hersheyland/en-us/recipes/recipe-images/17-hersheys-rich-cocoa-fudge.jpg" alt="crossaint">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Chocolate Fudge</span>
@@ -285,7 +303,7 @@
       </h2>
       <br>
       <div class="menu-item">
-        <img class="menu-item-image" src="https://brookrest.com/wp-content/uploads/2020/05/AdobeStock_315919556-scaled.jpeg" alt="crossaint">
+        <img class="menu-item-image zoom" src="https://brookrest.com/wp-content/uploads/2020/05/AdobeStock_315919556-scaled.jpeg" alt="crossaint">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Latte</span>
@@ -297,7 +315,7 @@
       </div>
       <br>
       <div class="menu-item">
-        <img class="menu-item-image" src="https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Mocha-1fc71f7.png" alt="Mocha">
+        <img class="menu-item-image zoom" src="https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Mocha-1fc71f7.png" alt="Mocha">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Mocha Coffee</span>
@@ -308,8 +326,10 @@
           </p>
         </div>
       </div>
+      <br>
+      <br>
       <div class="menu-item">
-        <img class="menu-item-image" src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2020-07-how-to-make-a-milkshake-at-home%2F2020-06-08_AT-K19388" alt="Mocha">
+        <img class="menu-item-image zoom" src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2020-07-how-to-make-a-milkshake-at-home%2F2020-06-08_AT-K19388" alt="Mocha">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">MilkShake - Chocolate // Vanilla // Strawberry</span>
@@ -322,8 +342,8 @@
       </div>
     </div>
   </div>
-  <footer>
-    
+  <footer style="background-color: black; color:white; border-radius:0.5rem;">
+    <h4 style="text-align: center; padding: 10px;">@Copyright 2022. Tushar Gautam</h4>
   </footer>
 </body>
 
