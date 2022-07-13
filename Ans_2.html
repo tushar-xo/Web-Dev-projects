@@ -8,6 +8,7 @@
   <title>food.html</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  
 </head>
 <style>.container {
     max-width: 1200px;
@@ -26,10 +27,6 @@
   .menu-group-heading {
     margin: 0;
     padding: 0.5rem;
-    /* padding-bottom: 1em;
-    border-bottom: 2px solid #ccc; */
-    /* text-align: center;
-    line-height: 2rem; */
     
   }
   .menu-group-heading h2{
@@ -72,12 +69,13 @@
   .menu-item-description {
     line-height: 1.6;
     margin-left: 10px;
+    border-color: rgb(255, 0, 0);
   }
   
   p.groove {
     border-style: groove;
     border-width: 2px;
-    border-radius: 4px;
+    border-radius: 12px;
     padding-left: 10px;
   }
 
@@ -115,12 +113,15 @@
             color: white;
         }
         .navbar li a:hover{
-            color: red
+            color: red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
         }
         .search{
             float: right;
             color: white;
             padding: 12px 75px;
+            
         }
         .navbar input{
             border: 2px solid black;
@@ -140,26 +141,63 @@
         .zoom:hover {
                transform: scale(1.5);
         }
+        
+        a{
+          text-decoration: none;
+        }
+        .butt{
+                 margin-left: 25rem;        
+        }
+        .butt button{
+          margin-left: 0.5rem;
+          background: linear-gradient(145deg,rgb(36, 215, 48),rgb(224, 224, 47));
+          padding: 0.2rem 0.4rem;
+          font-family: 'Courier New', Courier, monospace;
+          font-weight: bold;
+        }
+        .logo{
+          width:4rem;
+          height: 4rem;
+          margin-top: 0.5rem;
+          margin-left: 1rem;
+          border-radius: 10rem;
+        }
+        .navbar{
+          display:flex;
+          flex-direction: row;
+        }
+        .navbar li a{
+          font-size: larger;
+        }
+        body {
+           background-color:rgb(255, 249, 249);
+        }
   </style>
 <body>
   <header>
     <nav class="navbar">
+      <img src="https://st4.depositphotos.com/18566540/20602/v/380/depositphotos_206028100-stock-illustration-coffee-shop-logo-three-beans.jpg?forcejpeg=true" class="logo zoom" alt="">
         <ul>
+      
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Catering Services</a></li>
             <li><a href="#">Contact us</a></li>
             <div class="search">
+              <form action="" method="post">
                 <input type="text" name="search" id="search" placeholder="Search Food Item">
+                <input type="submit" value="Search">
+              </form>
+                
             </div>
         </ul>
     </nav>
 </header>
   <div class="container">
     <div class="menu">
-    <h1 class ="menu-group-heading" style="background-color:rgb(238, 235, 235); text-align: center;">The Bistro Café</h1>
+    <h1 class ="menu-group-heading" style="background-color:rgb(9, 8, 8); text-align: center; color:rgb(254, 202, 202)">The Bistro Café</h1>
     <h3 style="text-align: center;">~ Simplicity is Impeccable ~ </h3>
-     <h2 class="menu-group-heading" style="background-color:rgb(238, 235, 235);">
+     <h2 class="menu-group-heading" id="special" style="background-color:rgb(238, 235, 235);">
         Speciality
       </h2>
       <div class="menu-group">
@@ -242,7 +280,7 @@
       </div>
     
     <br><br>
-      <h2 class="menu-group-heading" style="background-color:rgb(238, 235, 235);">
+      <h2 class="menu-group-heading" id="dessert" style="background-color:rgb(238, 235, 235);">
         Dessert
       </h2>
       <div class="menu-group">
@@ -298,7 +336,7 @@
         </div>
       </div>
       <br><br>
-      <h2 class="menu-group-heading" style="background-color:rgb(238, 235, 235);">
+      <h2 class="menu-group-heading" id="coffee" style="background-color:rgb(238, 235, 235);">
        Coffee & Shakes
       </h2>
       <br>
@@ -342,8 +380,13 @@
       </div>
     </div>
   </div>
-  <footer style="background-color: black; color:white; border-radius:0.5rem;">
-    <h4 style="text-align: center; padding: 10px;">@Copyright 2022. Tushar Gautam</h4>
+  <footer style="background-color: rgb(23, 20, 20); color:white; border-radius:0.5rem;">
+    <h4 style="text-align: center; padding: 10px;"> ~ @Copyright 2022 Tushar Gautam ~ </h4>
+    <div class="butt">
+      <button><a href="#special">Speciality</a></button>
+      <button><a href="#dessert">Dessert</a></button>
+      <button><a href="#coffee">Coffee & Shakes</a></button>
+    </div>
   </footer>
 </body>
 
