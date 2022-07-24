@@ -4,14 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>food.html</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"rel="nofollow" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
-<style>.container {
-    max-width: 1200px;
+<style>
+.container {
+    max-width: auto;
     margin: 0 auto;
     padding: 1.5em;
   }
@@ -146,7 +149,7 @@
           text-decoration: none;
         }
         .butt{
-                 margin-left: 25rem;        
+              margin-left: 34%;      
         }
         .butt button{
           margin-left: 0.5rem;
@@ -175,22 +178,42 @@
   </style>
 <body>
   <header>
-    <nav class="navbar">
-      <img src="https://st4.depositphotos.com/18566540/20602/v/380/depositphotos_206028100-stock-illustration-coffee-shop-logo-three-beans.jpg?forcejpeg=true" class="logo zoom" alt="">
-        <ul>
-      
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Catering Services</a></li>
-            <li><a href="#">Contact us</a></li>
-            <div class="search">
-              <form action="" method="post">
-                <input type="text" name="search" id="search" placeholder="Search Food Item">
-                <input type="submit" value="Search">
-              </form>
-                
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.pngitem.com/pimgs/m/301-3018403_logo-royalty-free-vector-coffee-shop-logos-free.png" class="img-fluid" alt="Responsive image" style="width:70px;height:70px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Branch Locations</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Contact us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Feedback</a>
+          </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
     </nav>
 </header>
   <div class="container">
@@ -380,14 +403,12 @@
       </div>
     </div>
   </div>
-  <footer style="background-color: rgb(23, 20, 20); color:white; border-radius:0.5rem;">
-    <h4 style="text-align: center; padding: 10px;"> ~ @Copyright 2022 Tushar Gautam ~ </h4>
-    <div class="butt">
-      <button><a href="#special">Speciality</a></button>
-      <button><a href="#dessert">Dessert</a></button>
-      <button><a href="#coffee">Coffee & Shakes</a></button>
-    </div>
-  </footer>
+<footer class="page-footer , font-small">
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="/"> Tushar Gautam</a>
+  </div>
+</footer>
+
 </body>
 
 </html>
